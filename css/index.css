@@ -195,7 +195,7 @@ header {
   opacity: 0;
 }
 
-/* ----------------------- Projects Section ------------------------------- */
+/* ----------------------- Project Section ------------------------------- */
 
 #projects {
   display: flex;
@@ -243,7 +243,7 @@ header {
 
 /* ----------------------------- Abilities -------------------------------- */
 
-#abilities {
+#certificates {
   display: flex;
   flex-direction: column;
   align-items: center;
