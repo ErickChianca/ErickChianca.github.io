@@ -104,7 +104,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--blue);
+  background-color: var(--green);
   padding: 40px 80px 0px 80px;
 }
 
@@ -115,7 +115,7 @@ header {
 }
 
 .header-nav-btn {
-  background-color: var(--blue);
+  background-color: transparent;
   color: var(--dark-white);
   border: 0;
 }
@@ -128,9 +128,9 @@ header {
 
 .contact-me-btn {
   padding: 10px 15px;
-  background-color: var(--blue);
+  background-color: transparent;
   color: var(--dark-white);
-  border-radius: 6px;
+  border-radius: 8px;
   border-color: var(--dark-white);
 }
 
@@ -147,7 +147,7 @@ header {
   padding: 80px 80px 0px 80px;
   align-items: center;  
   justify-content: space-between;
-  background-color: var(--blue);
+  background-color: var(--green);
 } 
 
 .title-animation {
@@ -209,10 +209,22 @@ header {
 
 .web-projects-grid {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 50px;
   padding: 27px 0px 0px 0px;
+}
+
+.web-project-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.project-images-div {
+  display: flex;
+  gap: 30px;
 }
 
 .web-project-image {
@@ -236,9 +248,37 @@ header {
   padding: 27px 0px 0px 0px;
 }
 
-.mobile-project-image {
+.mobile-project-div {
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.mobile-project-image {
+  width: 100%;
   border-radius: 12px;
+}
+
+.project-title {
+  font-family: 'Bebas Neue';
+  font-size: 26px;
+}
+
+.projects-btn {
+  background-color: transparent;
+  color: var(--blue);
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.projects-btn:hover {
+  background-color: var(--blue);
+  border-color: var(--blue);
+  color: var(--dark-white);
+  transition: 0.4s;
 }
 
 /* ----------------------------- Abilities -------------------------------- */
@@ -249,7 +289,7 @@ header {
   align-items: center;
   min-height: 400px;
   padding: 100px 20vw;
-  background-color: var(--green);
+  background-color: var(--blue);
 }
 
 /* ----------------------------- Footer --------------------------------------- */
@@ -258,7 +298,7 @@ footer {
   font-family: 'Satoshi', sans-serif;
   display: flex;
   justify-content: space-between;
-  background-color: var(--green);
+  background-color: var(--blue);
   color: var(--dark-white);
   padding: 27px 80px;
 }
