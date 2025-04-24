@@ -59,7 +59,13 @@ a {
 }
 
 .wave-div {
-  height: 100px;
+  height: 100%;
+}
+
+.wave {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .section-header {
@@ -144,7 +150,7 @@ header {
 
 #introduction {
   display: flex;
-  padding: 80px 80px 0px 80px;
+  padding: 80px;
   align-items: center;  
   justify-content: space-between;
   background-color: var(--green);
@@ -230,6 +236,12 @@ header {
 .web-project-image {
   width: 400px;
   border-radius: 12px;
+}
+
+.project-infos-div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .web-mobile {
@@ -328,4 +340,168 @@ footer {
   width: 20px;
   margin-right: 5px;
   margin-bottom: 2px;
+}
+
+/* ------------------------------ Responsive -----------------------------------  */
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 46px;
+  }
+
+  .introduction-image {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .web-projects-grid {
+    justify-content: center;
+  }
+
+  .web-project-div {
+    align-items: center;  
+  }
+
+  .project-images-div {
+    flex-direction: column;
+  }  
+
+  .project-infos-div {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 930px) {
+  #introduction {
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px;
+  }
+
+  .title-animation {
+    font-size: 48px;
+  }
+
+  .introduction-image {
+    width: 500px;
+  }
+
+  .introduction-text {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    padding: 40px 60px 0px 60px;
+  }
+
+  .introduction-image {
+    width: 450px;
+  }
+
+  .header-nav {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 620px) {
+  .title {
+    font-size: 42px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 530px) {
+  header {
+    padding: 30px 40px 0px 40px;
+  }
+
+  #introduction { 
+    padding: 40px;
+  }
+
+  .title {
+    font-size: 38px;  
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  #about-me {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 490px) {
+  .header-nav {
+    gap: 15px;
+  }
+
+  .contact-me-btn {
+    padding: 8px 12px;
+  }
+
+  .title {
+    font-size: 32px;  
+  }
+
+  .introduction-image {
+    width: 370px;
+  }
+
+  .web-projects-grid {
+    padding: 10px;
+  }
+
+  .web-project-image {
+    width: 350px;
+  }
+
+  .project-infos-div {
+    width: 350px;
+  }
+
+  .projects-btn { 
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 430px) {
+  .header-nav {
+    gap: 10px;
+  }
+
+  .contact-me-btn {
+    padding: 8px 10px;
+  }
+
+  .introduction-image {
+    width: 340px;
+  }
+
+  .web-project-image {
+    width: 330px;
+  }
+
+  .project-infos-div {
+    width: 330px;
+  }
+
+  .projects-btn { 
+    padding: 8px 10px;
+  }
 }
