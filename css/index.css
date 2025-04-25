@@ -551,6 +551,7 @@ footer {
   .projects-btn { 
     padding: 8px 10px;
     color: var(--blue);
+    border: solid 1px var(--blue)
   }
 }
 
