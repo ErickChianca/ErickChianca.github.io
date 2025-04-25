@@ -9,17 +9,17 @@ const mobileGrid = document.querySelector('.mobile-projects-grid')
 switchBtn.forEach(button => {
   button.addEventListener('click', () => {
     if (button.classList.contains('portuguese-btn')) {
-      portugueseText.classList.remove('disabled')
-      englishText.classList.add('disabled')
+      portugueseText.classList.remove('is-hidden')
+      englishText.classList.add('is-hidden')
     } else if (button.classList.contains('english-btn')) {
-      englishText.classList.remove('disabled')
-      portugueseText.classList.add('disabled')
+      englishText.classList.remove('is-hidden')
+      portugueseText.classList.add('is-hidden')
     } else if (button.classList.contains('mobile-btn')) {
-      mobileGrid.classList.remove('disabled')
-      webGrid.classList.add('disabled')
+      mobileGrid.classList.remove('is-hidden')
+      webGrid.classList.add('is-hidden')
     } else {
-      webGrid.classList.remove('disabled')
-      mobileGrid.classList.add('disabled')
+      webGrid.classList.remove('is-hidden')
+      mobileGrid.classList.add('is-hidden') 
     }
 })
 })
